@@ -1,0 +1,13 @@
+Input:
+Alert message
+
+Pipeline:
+Incident Detector → Incident Response Assistant → Incident Notifier
+
+Output:
+Structured Incident JSON + Notification Message
+
+When available, automatically use the following tools:
+- get_recent_logs(service)
+- get_service_metrics(service)
+- send_incident_notification(summary)
